@@ -52,5 +52,6 @@
     </div>
   </div>
 
-  <app-edit></app-edit>
+  <app-edit [activeClip]="activeClip"
+    (update)="update($event)"></app-edit>
 
