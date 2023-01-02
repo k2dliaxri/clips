@@ -8,8 +8,8 @@ import { Component, AfterContentInit, ContentChildren, QueryList } from '@angula
 })
 export class TabContainerComponent implements AfterContentInit {
 
-@ContentChildren(TabComponent) tabs?: QueryList<TabComponent>
-// @ContentChildren(TabComponent) tabs: QueryList<TabComponent> = new QueryList()
+// @ContentChildren(TabComponent) tabs?: QueryList<TabComponent>
+@ContentChildren(TabComponent) tabs: QueryList<TabComponent> = new QueryList()
 
   constructor() { }
 
